@@ -3,6 +3,8 @@ dist: trusty
 before_install:
   - sudo apt-get update -qq
   - sudo apt-get -y build-dep xen
+  - libpython-dev
+  - libpython2.7-dev 
 script: 
   - ./configure
   - make dist-xen
