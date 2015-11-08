@@ -1,9 +1,6 @@
-sudo: false
-addons:
-  apt:
-    packages:
-    - build-dep xen
-    - libpixman-1-dev
+sudo: true
+before_install:
+  - sudo apt-get install -y build-dep xen
 script: 
   - ./configure
   - make dist-xen
