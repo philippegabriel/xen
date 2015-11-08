@@ -1,7 +1,7 @@
 sudo: required
 dist: trusty
 before_install:
-  - sudo apt-get install -y build-dep xen
+  - sudo apt-get -y build-dep xen
 script: 
   - ./configure
   - make dist-xen
