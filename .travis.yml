@@ -1,0 +1,10 @@
+sudo: false
+addons:
+  apt:
+    packages:
+    - build-dep xen
+    - libpixman-1-dev
+script: 
+  - ./configure
+  - make dist-xen
+  - make dist-tools  
